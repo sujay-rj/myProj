@@ -1,0 +1,222 @@
+.header {
+    background-color: white;
+    border-bottom: 1px solid rgba(0, 0, 0, 0.08);
+    left: 0;
+    padding: 0 24px;
+    position: fixed;
+    top: 0;
+    width: 100vw;
+    z-index: 100;
+}
+
+.content {
+    display: flex;
+    align-items: center;
+    margin: 0 auto;
+    min-height: 100%;
+    max-width: 1128px;
+}
+
+
+/* ###################   linked in logo style   ############## */
+
+.logo>img {
+    margin-right: 8px;
+    font-size: 0px;
+}
+
+
+/* ##############  searchbar style  ############## */
+
+.search {
+    opacity: 1;
+    flex-grow: 1;
+    position: relative;
+}
+
+.input {
+    max-width: 280px;
+}
+
+.input>input {
+    border: none;
+    box-shadow: none;
+    background-color: #eef3f8;
+    border-radius: 2px;
+    color: rgba(0, 0, 0, 0.09);
+    width: 218px;
+    padding: 0px 8px 0px 40px;
+    line-height: 1.75;
+    font-weight: 400;
+    font-size: 14px;
+    height: 34px;
+    border-color: #dce6f1;
+    vertical-align: text-top;
+}
+
+.icon>img {
+    width: 20px;
+    position: absolute;
+    z-index: 1;
+    top: 10px;
+    left: 2px;
+    border-radius: 0 2px 2px 0;
+    margin: 0;
+    pointer-events: none;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+
+/* ##################  nav menu style   ############### */
+
+.navmenu {
+    margin-left: auto;
+    display: block;
+    /* right: 5%; */
+    position: relative;
+}
+
+.navwrap {
+    display: flex;
+    flex-wrap: nowrap;
+    list-style-type: none;
+}
+
+.navlist {
+    display: flex;
+    align-items: center;
+}
+
+.navlist>a {
+    align-items: center;
+    background: transparent;
+    display: flex;
+    flex-direction: column;
+    font-size: 12px;
+    font-weight: 400;
+    justify-content: center;
+    line-height: 1.5;
+    min-height: 52px;
+    min-width: 80px;
+    position: relative;
+    text-decoration: none;
+}
+
+.navlist>a>span {
+    color: rgba(0, 0, 0, 0.6);
+    display: flex;
+    align-items: center;
+}
+
+.navlist>a>span:hover,
+.navlist>a>span:active {
+    color: rgba(0, 0, 0, 1);
+}
+
+.navlist>a>span:active {
+    content: "";
+    transform: scaleX(1);
+    border-bottom: 2px solid var(--white, #fff);
+    bottom: 0;
+    left: 0;
+    position: absolute;
+    transition: transform 0.2s ease-in-out;
+    width: 100%;
+    border-color: rgba(0, 0, 0, 0.9);
+}
+
+.user {
+    display: flex;
+    height: 60px;
+    width: 80px;
+    justify-content: center;
+    align-items: center;
+}
+
+.user:hover .signout {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.signout {
+    position: absolute;
+    top: 45px;
+    background: white;
+    border-radius: 0 0 5px 5px;
+    width: 100px;
+    height: 40px;
+    font-size: 16px;
+    transition: 167ms;
+    text-align: center;
+    display: none;
+}
+
+.user>a {
+    width: 24px;
+    border-radius: 50%;
+}
+
+.user>a>img {
+    width: 24px;
+    height: 24px;
+    border-radius: 50%;
+}
+
+.userspan {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.userspan>p {
+    font-size: 14px;
+}
+
+.work {
+    border-left: 1px solid rgba(0, 0, 0, 0.08);
+    padding: 0 10px;
+    display: flex;
+    height: 52px;
+    width: 80px;
+    justify-content: center;
+    margin-top: 6px;
+}
+
+.work>a {
+    width: 24px;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+
+.work>a>img {
+    width: 28px;
+}
+
+.workspan {
+    display: flex;
+    align-items: center;
+    text-decoration: none;
+}
+
+.workspan>p {
+    font-size: 14px;
+}
+
+
+/* ####################   responsive code   ############################################# */
+
+@media only screen and (max-width:768px) {
+    .navmenu {
+        position: fixed;
+        left: 0;
+        bottom: 0;
+        background: white;
+        width: 100%;
+        min-width: 552px;
+    }
+}

@@ -1,0 +1,169 @@
+.container {
+    padding: 0px;
+}
+
+.nav {
+    max-width: 1128px;
+    margin: auto;
+    padding: 12px 0 16px;
+    display: flex;
+    align-items: center;
+    position: relative;
+    justify-content: space-between;
+    flex-wrap: nowrap;
+}
+
+.imglink>img {
+    width: 135px;
+    height: 35px;
+}
+
+.btns {
+    display: flex;
+}
+
+.joinnow {
+    font: bold 16px Arial, sans-serif;
+    padding: 10px 12px;
+    text-decoration: none;
+    color: rgba(0, 0, 0, 0.6);
+    margin-right: 12px;
+    border-radius: 4px;
+}
+
+.joinnow:hover {
+    background-color: rgba(0, 0, 0, 0.08);
+    color: rgba(0, 0, 0, 0.9);
+    text-decoration: none;
+}
+
+.signin {
+    box-shadow: inset 0 0 0 1px #0a66c2;
+    color: #0a66c2;
+    border-radius: 24px;
+    transition-duration: 167ms;
+    font-size: 16px;
+    font-weight: 600;
+    line-height: 40px;
+    text-align: center;
+    padding: 0px 20px 0px 20px;
+}
+
+
+/*   ###################     section2   ############## */
+
+.banner {
+    display: flex;
+    align-content: flex-start;
+    min-height: 700px;
+    padding-bottom: 140px;
+    padding-top: 40px;
+    padding: 60px 0;
+    position: relative;
+    flex-wrap: wrap;
+    width: 100%;
+    max-width: 1128px;
+    align-items: center;
+    margin: auto;
+}
+
+.hero {
+    width: 100%;
+}
+
+.hero>h1 {
+    padding-bottom: 0;
+    width: 55%;
+    font-size: 56px;
+    color: #2977c9;
+    font-weight: 200;
+    line-height: 70px;
+}
+
+.hero>img {
+    /* z-index: -1; */
+    width: 700px;
+    height: 670px;
+    position: absolute;
+    bottom: -2px;
+    right: -150px;
+}
+
+
+/* ###############  form css of google  ############# */
+
+.form {
+    margin-top: 100px;
+    width: 400px;
+}
+
+.google {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    background-color: #fff;
+    height: 56px;
+    width: 100%;
+    border-radius: 28px;
+    box-shadow: inset 0 0 0 1px rgb(0, 0, 0 /60%), inset 0 0 0 2px rgb(0, 0, 0 /0%) inset 0 0 0 1px rgb(0, 0, 0 /0);
+    vertical-align: middle;
+    z-index: 0;
+    transition-duration: 167ms;
+    font-size: 20px;
+    color: rgba(0, 0, 0, 0.6);
+}
+
+.google:hover {
+    background-color: rgba(207 207, 207, 0.25);
+    color: rgba(0, 0, 0, 0.75);
+}
+
+.google>p:hover {
+    cursor: context-menu;
+}
+
+
+/* ###################    responsive code  ###################### */
+
+@media only screen and (max-width:960px) {
+    .hero>img {
+        /* top: 3px; */
+        margin: 15px;
+        margin-top: 25px;
+        width: initial;
+        position: initial;
+        height: initial;
+        width: 670px;
+        height: 570px;
+    }
+}
+
+
+/* ###################    responsive code  ###################### */
+
+@media only screen and (max-width:768px) {
+    .imglink>img {
+        padding: 0 5px;
+    }
+    .banner {
+        margin: auto;
+        min-height: 0px
+    }
+    .hero>h1 {
+        text-align: center;
+        font-size: 20px;
+        width: 100%;
+        line-height: 2px;
+    }
+    .form {
+        margin: 20px;
+    }
+    .hero>img {
+        /* top: 3px; */
+        margin: 15px;
+        margin-top: 25px;
+        width: initial;
+        position: initial;
+        height: initial;
+    }
+}
